@@ -229,6 +229,8 @@ This will start the ETL process, pulling data from ClickUp and Float, transformi
 To run the tests and ensure everything is functioning as expected:
 
 ```bash
+cd src
+
 python -m pytest tests/
 ```
 
