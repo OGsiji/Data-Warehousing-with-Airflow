@@ -22,7 +22,7 @@ class MockTaskInstance:
             'name': ['John Doe', 'Jane Smith'],
             'date': ['2023-07-01', '2023-07-02'],
             'hours': [8, 6],
-            'billable': [True, False],
+            'billable': ["No", "Yes"],
             'task': ['Development', 'Design']
         })
         
