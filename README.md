@@ -253,7 +253,3 @@ This pipeline is **scalable**, **robust**, and built with **best practices** in 
 Additionally, with the **standard DAG**'s optimized arrangement and **industry-standard specifications**, you'll be able to confidently run and manage data pipelines at scale—perfect for handling growing datasets and ensuring data accuracy.
 
 **Start building, learning, and contributing to scalable data pipelines with this project—you're one step closer to mastering the art of ETL in Apache Airflow!**
-
----
-
-This version of the README includes both DAGs with a clear distinction between the basic and standard ones, ensuring clarity and excitement about the project. Let me know if you need further modifications!
