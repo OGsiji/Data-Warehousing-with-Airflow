@@ -7071,3 +7071,106 @@ File Path                                                     PID    Runtime    
 /Users/sijibomijoshua/airflow/dags/data_warehouse_etl_dag.py                           1           0  2.50s           2024-12-05T14:32:41                      12
 /Users/sijibomijoshua/airflow/dags/dim_process.py                                      1           0  1.54s           2024-12-05T14:32:11                      12
 ================================================================================
+[2024-12-05T15:33:13.884+0100] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/Users/sijibomijoshua/airflow/dags/data_warehouse_etl_dag.py                           1           0  2.12s           2024-12-05T14:33:13                      12
+/Users/sijibomijoshua/airflow/dags/dim_process.py                                      1           0  1.79s           2024-12-05T14:32:44                      12
+================================================================================
+[2024-12-05T15:33:14.973+0100] {manager.py:821} INFO - Searching for files in /Users/sijibomijoshua/airflow/dags
+[2024-12-05T15:33:14.976+0100] {manager.py:824} INFO - There are 2 files in /Users/sijibomijoshua/airflow/dags
+[2024-12-05T15:33:46.440+0100] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/Users/sijibomijoshua/airflow/dags/dim_process.py                                      1           0  3.00s           2024-12-05T14:33:18                      12
+/Users/sijibomijoshua/airflow/dags/data_warehouse_etl_dag.py                           1           0  2.49s           2024-12-05T14:33:46                      12
+================================================================================
+[2024-12-05T15:34:18.795+0100] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/Users/sijibomijoshua/airflow/dags/dim_process.py                                      1           0  2.80s           2024-12-05T14:33:51                      12
+/Users/sijibomijoshua/airflow/dags/data_warehouse_etl_dag.py                           1           0  2.28s           2024-12-05T14:34:18                      12
+================================================================================
+[2024-12-05T15:34:50.789+0100] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/Users/sijibomijoshua/airflow/dags/data_warehouse_etl_dag.py                           1           0  1.93s           2024-12-05T14:34:50                      12
+/Users/sijibomijoshua/airflow/dags/dim_process.py                                      1           0  1.61s           2024-12-05T14:34:23                      12
+================================================================================
+[2024-12-05T15:35:23.260+0100] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/Users/sijibomijoshua/airflow/dags/data_warehouse_etl_dag.py                           1           0  2.41s           2024-12-05T14:35:23                      12
+/Users/sijibomijoshua/airflow/dags/dim_process.py                                      1           0  1.29s           2024-12-05T14:34:55                      12
+================================================================================
+[2024-12-05T15:35:55.369+0100] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/Users/sijibomijoshua/airflow/dags/data_warehouse_etl_dag.py                           1           0  2.04s           2024-12-05T14:35:55                      12
+/Users/sijibomijoshua/airflow/dags/dim_process.py                                      1           0  1.27s           2024-12-05T14:35:26                      12
+================================================================================
+[2024-12-05T15:36:27.956+0100] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/Users/sijibomijoshua/airflow/dags/dim_process.py                                      1           0  3.42s           2024-12-05T14:36:00                      12
+/Users/sijibomijoshua/airflow/dags/data_warehouse_etl_dag.py                           1           0  2.48s           2024-12-05T14:36:27                      12
+================================================================================
+[2024-12-05T15:36:59.877+0100] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/Users/sijibomijoshua/airflow/dags/data_warehouse_etl_dag.py                           1           0  1.85s           2024-12-05T14:36:59                      12
+/Users/sijibomijoshua/airflow/dags/dim_process.py                                      1           0  1.61s           2024-12-05T14:36:32                      12
+================================================================================
+[2024-12-05T15:37:32.004+0100] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/Users/sijibomijoshua/airflow/dags/data_warehouse_etl_dag.py                           1           0  2.06s           2024-12-05T14:37:32                      12
+/Users/sijibomijoshua/airflow/dags/dim_process.py                                      1           0  1.75s           2024-12-05T14:37:04                      12
+================================================================================
+[2024-12-05T15:38:03.994+0100] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/Users/sijibomijoshua/airflow/dags/data_warehouse_etl_dag.py                           1           0  1.93s           2024-12-05T14:38:03                      12
+/Users/sijibomijoshua/airflow/dags/dim_process.py                                      1           0  1.75s           2024-12-05T14:37:36                      12
+================================================================================
+[2024-12-05T15:38:15.081+0100] {manager.py:821} INFO - Searching for files in /Users/sijibomijoshua/airflow/dags
+[2024-12-05T15:38:15.084+0100] {manager.py:824} INFO - There are 2 files in /Users/sijibomijoshua/airflow/dags
+[2024-12-05T15:38:35.994+0100] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/Users/sijibomijoshua/airflow/dags/data_warehouse_etl_dag.py                           1           0  1.93s           2024-12-05T14:38:35                      12
+/Users/sijibomijoshua/airflow/dags/dim_process.py                                      1           0  1.64s           2024-12-05T14:38:08                      12
+================================================================================

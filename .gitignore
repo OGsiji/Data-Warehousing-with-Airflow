@@ -1,0 +1,61 @@
+# Python bytecode files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+
+# Virtual environment
+venv/
+env/
+*.env
+*.venv
+
+# Airflow logs and metadata
+airflow/logs/
+airflow/scheduler*
+airflow/dags/*
+airflow/.airflow.cfg
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE/editor-specific files
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Python packaging
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+wheels/
+pip-wheel-metadata/
+
+# Jupyter notebooks
+.ipynb_checkpoints/
+
+# pytest cache
+.cache/
+
+# MySQL/MongoDB local database files
+*.db
+
+# If you're using Docker
+docker-compose.override.yml
+.docker/
+Dockerfile
+
+# .env files for secrets
+.env
+.env.local
+airflow_env
+
+airflow-*
