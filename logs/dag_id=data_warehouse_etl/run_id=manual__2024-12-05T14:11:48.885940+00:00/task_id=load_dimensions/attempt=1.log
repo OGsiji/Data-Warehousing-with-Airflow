@@ -1,0 +1,38 @@
+[2024-12-05T15:11:55.882+0100] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-12-05T15:11:55.886+0100] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: data_warehouse_etl.load_dimensions manual__2024-12-05T14:11:48.885940+00:00 [queued]>
+[2024-12-05T15:11:55.888+0100] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: data_warehouse_etl.load_dimensions manual__2024-12-05T14:11:48.885940+00:00 [queued]>
+[2024-12-05T15:11:55.889+0100] {taskinstance.py:2866} INFO - Starting attempt 1 of 2
+[2024-12-05T15:11:55.895+0100] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): load_dimensions> on 2024-12-05 14:11:48.885940+00:00
+[2024-12-05T15:11:55.899+0100] {standard_task_runner.py:72} INFO - Started process 2887 to run task
+[2024-12-05T15:11:55.902+0100] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'data_warehouse_etl', 'load_dimensions', 'manual__2024-12-05T14:11:48.885940+00:00', '--job-id', '124', '--raw', '--subdir', 'DAGS_FOLDER/dim_process.py', '--cfg-path', '/var/folders/4k/bhptqqm131v6f034phck6fc80000gn/T/tmp3wo03eot']
+[2024-12-05T15:11:55.906+0100] {standard_task_runner.py:105} INFO - Job 124: Subtask load_dimensions
+[2024-12-05T15:11:55.922+0100] {task_command.py:467} INFO - Running <TaskInstance: data_warehouse_etl.load_dimensions manual__2024-12-05T14:11:48.885940+00:00 [running]> on host sijibomis-mbp
+[2024-12-05T15:11:55.946+0100] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='data_engineering' AIRFLOW_CTX_DAG_ID='data_warehouse_etl' AIRFLOW_CTX_TASK_ID='load_dimensions' AIRFLOW_CTX_EXECUTION_DATE='2024-12-05T14:11:48.885940+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-12-05T14:11:48.885940+00:00'
+[2024-12-05T15:11:55.947+0100] {taskinstance.py:731} INFO - ::endgroup::
+[2024-12-05T15:11:55.982+0100] {logging_mixin.py:190} WARNING - /Users/sijibomijoshua/airflow/dags/dim_process.py:88 UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+[2024-12-05T15:11:55.997+0100] {logging_mixin.py:190} WARNING - /Users/sijibomijoshua/airflow/dags/dim_process.py:98 UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+[2024-12-05T15:11:55.999+0100] {python.py:240} INFO - Done. Returned value was: (       client                       project  project_key
+0    Client 1           Website Development            1
+168  Client 1               Brand Guideline            2
+241  Client 2  Book Localization to Ukraine            3,                      name                        role  employee_key
+0      Isabella Rodriguez                         NaN             1
+25             John Smith                         NaN             2
+49                Liu Wei                         NaN             3
+82            Emily Patel                         NaN             4
+99               Ali Khan                         NaN             5
+168                 Xu Li                         NaN             6
+241  Vladyslav Shevchenko                         NaN             7
+357            Ana Suarez                         NaN             8
+0      Isabella Rodriguez            Product Designer             9
+1              John Smith              Design Manager            10
+2                 Liu Wei          Front End Engineer            11
+3             Emily Patel                 QA Engineer            12
+4                Ali Khan             Project Manager            13
+5                   Xu Li              Brand Designer            14
+8    Vladyslav Shevchenko  Localization Specialist UK            15
+11             Ana Suarez              Brand Designer            16)
+[2024-12-05T15:11:56.008+0100] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-12-05T15:11:56.008+0100] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=data_warehouse_etl, task_id=load_dimensions, run_id=manual__2024-12-05T14:11:48.885940+00:00, execution_date=20241205T141148, start_date=20241205T141155, end_date=20241205T141156
+[2024-12-05T15:11:56.050+0100] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-12-05T15:11:56.057+0100] {taskinstance.py:3895} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-12-05T15:11:56.057+0100] {local_task_job_runner.py:245} INFO - ::endgroup::

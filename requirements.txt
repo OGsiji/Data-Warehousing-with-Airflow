@@ -1,0 +1,21 @@
+# Core Data Processing
+pandas
+sqlalchemy==1.4
+numpy
+# Airflow
+apache-airflow
+apache-airflow-providers-sqlite
+pendulum
+# Data Validation
+great-expectations==0.15.15
+# Environment Management
+python-dotenv==0.20.0
+# Testing
+pytest==7.1.2
+pytest-cov==3.0.0
+# Logging
+structlog==22.1.0
+# Development
+black==22.3.0
+isort==5.10.1
+flake8==4.0.1

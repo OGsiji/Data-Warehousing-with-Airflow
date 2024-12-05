@@ -1,0 +1,144 @@
+[2024-12-05T13:59:31.840+0100] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-12-05T13:59:31.845+0100] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: data_warehouse_etl_standard.clean_data manual__2024-12-05T12:54:21.326058+00:00 [queued]>
+[2024-12-05T13:59:31.847+0100] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: data_warehouse_etl_standard.clean_data manual__2024-12-05T12:54:21.326058+00:00 [queued]>
+[2024-12-05T13:59:31.847+0100] {taskinstance.py:2866} INFO - Starting attempt 2 of 3
+[2024-12-05T13:59:31.862+0100] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): clean_data> on 2024-12-05 12:54:21.326058+00:00
+[2024-12-05T13:59:31.865+0100] {standard_task_runner.py:72} INFO - Started process 96901 to run task
+[2024-12-05T13:59:31.868+0100] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'data_warehouse_etl_standard', 'clean_data', 'manual__2024-12-05T12:54:21.326058+00:00', '--job-id', '50', '--raw', '--subdir', 'DAGS_FOLDER/data_warehouse_etl_dag.py', '--cfg-path', '/var/folders/4k/bhptqqm131v6f034phck6fc80000gn/T/tmpwuott2z9']
+[2024-12-05T13:59:31.870+0100] {standard_task_runner.py:105} INFO - Job 50: Subtask clean_data
+[2024-12-05T13:59:31.890+0100] {task_command.py:467} INFO - Running <TaskInstance: data_warehouse_etl_standard.clean_data manual__2024-12-05T12:54:21.326058+00:00 [running]> on host sijibomis-mbp
+[2024-12-05T13:59:31.911+0100] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='data_engineering' AIRFLOW_CTX_DAG_ID='data_warehouse_etl_standard' AIRFLOW_CTX_TASK_ID='clean_data' AIRFLOW_CTX_EXECUTION_DATE='2024-12-05T12:54:21.326058+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-12-05T12:54:21.326058+00:00'
+[2024-12-05T13:59:31.911+0100] {taskinstance.py:731} INFO - ::endgroup::
+[2024-12-05T13:59:31.949+0100] {transform.py:48} WARNING - Negative hours found in ClickUp dataset
+[2024-12-05T13:59:31.950+0100] {transform.py:71} ERROR - Data transformation error: 'hours'
+[2024-12-05T13:59:31.950+0100] {taskinstance.py:3311} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/Users/sijibomijoshua/airflow/airflow_env/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'hours'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/sijibomijoshua/airflow/airflow_env/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sijibomijoshua/airflow/airflow_env/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sijibomijoshua/airflow/airflow_env/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sijibomijoshua/airflow/airflow_env/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 417, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sijibomijoshua/airflow/airflow_env/lib/python3.11/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sijibomijoshua/airflow/airflow_env/lib/python3.11/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sijibomijoshua/airflow/airflow_env/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sijibomijoshua/airflow/src/data_pipeline/transform.py", line 62, in clean_data
+    float_df = validate_data(float_df, 'Float')
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sijibomijoshua/airflow/src/data_pipeline/transform.py", line 47, in validate_data
+    if (df['hours'] < 0).any():
+        ~~^^^^^^^^^
+  File "/Users/sijibomijoshua/airflow/airflow_env/lib/python3.11/site-packages/pandas/core/frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sijibomijoshua/airflow/airflow_env/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'hours'
+[2024-12-05T13:59:31.969+0100] {taskinstance.py:1225} INFO - Marking task as UP_FOR_RETRY. dag_id=data_warehouse_etl_standard, task_id=clean_data, run_id=manual__2024-12-05T12:54:21.326058+00:00, execution_date=20241205T125421, start_date=20241205T125931, end_date=20241205T125931
+[2024-12-05T13:59:31.999+0100] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-12-05T13:59:32.000+0100] {standard_task_runner.py:124} ERROR - Failed to execute job 50 for task clean_data ('hours'; 96901)
+Traceback (most recent call last):
+  File "/Users/sijibomijoshua/airflow/airflow_env/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'hours'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/sijibomijoshua/airflow/airflow_env/lib/python3.11/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sijibomijoshua/airflow/airflow_env/lib/python3.11/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sijibomijoshua/airflow/airflow_env/lib/python3.11/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sijibomijoshua/airflow/airflow_env/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sijibomijoshua/airflow/airflow_env/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sijibomijoshua/airflow/airflow_env/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/Users/sijibomijoshua/airflow/airflow_env/lib/python3.11/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sijibomijoshua/airflow/airflow_env/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3005, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/Users/sijibomijoshua/airflow/airflow_env/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/Users/sijibomijoshua/airflow/airflow_env/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3159, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sijibomijoshua/airflow/airflow_env/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3183, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sijibomijoshua/airflow/airflow_env/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sijibomijoshua/airflow/airflow_env/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sijibomijoshua/airflow/airflow_env/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sijibomijoshua/airflow/airflow_env/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 417, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sijibomijoshua/airflow/airflow_env/lib/python3.11/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sijibomijoshua/airflow/airflow_env/lib/python3.11/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sijibomijoshua/airflow/airflow_env/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sijibomijoshua/airflow/src/data_pipeline/transform.py", line 62, in clean_data
+    float_df = validate_data(float_df, 'Float')
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sijibomijoshua/airflow/src/data_pipeline/transform.py", line 47, in validate_data
+    if (df['hours'] < 0).any():
+        ~~^^^^^^^^^
+  File "/Users/sijibomijoshua/airflow/airflow_env/lib/python3.11/site-packages/pandas/core/frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sijibomijoshua/airflow/airflow_env/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'hours'
+[2024-12-05T13:59:32.054+0100] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2024-12-05T13:59:32.062+0100] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-12-05T13:59:32.063+0100] {local_task_job_runner.py:245} INFO - ::endgroup::

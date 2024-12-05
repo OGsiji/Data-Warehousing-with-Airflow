@@ -1,0 +1,48 @@
+[2024-12-05T14:38:54.433+0100] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-12-05T14:38:54.439+0100] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: data_warehouse_etl_standard.clean_data manual__2024-12-05T13:33:29.205192+00:00 [queued]>
+[2024-12-05T14:38:54.441+0100] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: data_warehouse_etl_standard.clean_data manual__2024-12-05T13:33:29.205192+00:00 [queued]>
+[2024-12-05T14:38:54.442+0100] {taskinstance.py:2866} INFO - Starting attempt 2 of 3
+[2024-12-05T14:38:54.446+0100] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): clean_data> on 2024-12-05 13:33:29.205192+00:00
+[2024-12-05T14:38:54.449+0100] {standard_task_runner.py:72} INFO - Started process 54544 to run task
+[2024-12-05T14:38:54.453+0100] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'data_warehouse_etl_standard', 'clean_data', 'manual__2024-12-05T13:33:29.205192+00:00', '--job-id', '73', '--raw', '--subdir', 'DAGS_FOLDER/data_warehouse_etl_dag.py', '--cfg-path', '/var/folders/4k/bhptqqm131v6f034phck6fc80000gn/T/tmp6nfcngsg']
+[2024-12-05T14:38:54.455+0100] {standard_task_runner.py:105} INFO - Job 73: Subtask clean_data
+[2024-12-05T14:38:54.472+0100] {task_command.py:467} INFO - Running <TaskInstance: data_warehouse_etl_standard.clean_data manual__2024-12-05T13:33:29.205192+00:00 [running]> on host sijibomis-mbp
+[2024-12-05T14:38:54.492+0100] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='data_engineering' AIRFLOW_CTX_DAG_ID='data_warehouse_etl_standard' AIRFLOW_CTX_TASK_ID='clean_data' AIRFLOW_CTX_EXECUTION_DATE='2024-12-05T13:33:29.205192+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-12-05T13:33:29.205192+00:00'
+[2024-12-05T14:38:54.493+0100] {taskinstance.py:731} INFO - ::endgroup::
+[2024-12-05T14:38:54.596+0100] {transform.py:49} WARNING - Negative hours found in ClickUp dataset
+[2024-12-05T14:38:54.599+0100] {transform.py:72} INFO - ClickUp data cleaned: 456 rows
+[2024-12-05T14:38:54.599+0100] {transform.py:73} INFO - Float data cleaned: 13 rows
+[2024-12-05T14:38:54.599+0100] {python.py:240} INFO - Done. Returned value was: (       client                       project  ...                                        note billable
+0    Client 1           Website Development  ...                     Refined design elements      Yes
+1    Client 1           Website Development  ...             Drafted initial design concepts      Yes
+2    Client 1           Website Development  ...             Drafted initial design concepts      Yes
+3    Client 1           Website Development  ...  Made revisions to design based on feedback      Yes
+4    Client 1           Website Development  ...  Made revisions to design based on feedback      Yes
+..        ...                           ...  ...                                         ...      ...
+451  Client 2  Book Localization to Ukraine  ...              Checked in on project progress      Yes
+452  Client 2  Book Localization to Ukraine  ...                    Communicated with client      Yes
+453  Client 2  Book Localization to Ukraine  ...              Checked in on project progress      Yes
+454  Client 2  Book Localization to Ukraine  ...                    Facilitated team meeting      Yes
+455  Client 2  Book Localization to Ukraine  ...                    Facilitated team meeting      Yes
+
+[456 rows x 8 columns],       client                       project  ...   end_date estimated_hours
+0   Client 1           Website Development  ... 2023-07-24             112
+1   Client 1           Website Development  ... 2023-07-24              24
+2   Client 1           Website Development  ... 2023-08-28             189
+3   Client 1           Website Development  ... 2023-09-04              77
+4   Client 1           Website Development  ... 2023-09-04              92
+5   Client 1               Brand Guideline  ... 2023-07-24             112
+6   Client 1               Brand Guideline  ... 2023-07-24              32
+7   Client 1               Brand Guideline  ... 2023-07-24              24
+8   Client 2  Book Localization to Ukraine  ... 2023-08-14             182
+9   Client 2  Book Localization to Ukraine  ... 2023-08-28             182
+10  Client 2  Book Localization to Ukraine  ... 2023-08-28              52
+11  Client 2  Book Localization to Ukraine  ... 2023-08-28               0
+12  Client 2  Book Localization to Ukraine  ... 2023-08-28              36
+
+[13 rows x 8 columns])
+[2024-12-05T14:38:54.619+0100] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-12-05T14:38:54.620+0100] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=data_warehouse_etl_standard, task_id=clean_data, run_id=manual__2024-12-05T13:33:29.205192+00:00, execution_date=20241205T133329, start_date=20241205T133854, end_date=20241205T133854
+[2024-12-05T14:38:54.647+0100] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-12-05T14:38:54.654+0100] {taskinstance.py:3895} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-12-05T14:38:54.655+0100] {local_task_job_runner.py:245} INFO - ::endgroup::

@@ -1,0 +1,167 @@
+[2024-12-04T15:42:25.247+0100] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-12-04T15:42:25.252+0100] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: data_warehouse_etl.load_datasets manual__2024-12-04T14:42:16.988033+00:00 [queued]>
+[2024-12-04T15:42:25.259+0100] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: data_warehouse_etl.load_datasets manual__2024-12-04T14:42:16.988033+00:00 [queued]>
+[2024-12-04T15:42:25.259+0100] {taskinstance.py:2866} INFO - Starting attempt 1 of 2
+[2024-12-04T15:42:25.319+0100] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): load_datasets> on 2024-12-04 14:42:16.988033+00:00
+[2024-12-04T15:42:25.323+0100] {standard_task_runner.py:72} INFO - Started process 39481 to run task
+[2024-12-04T15:42:25.325+0100] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'data_warehouse_etl', 'load_datasets', 'manual__2024-12-04T14:42:16.988033+00:00', '--job-id', '15', '--raw', '--subdir', 'DAGS_FOLDER/dim_process.py', '--cfg-path', '/var/folders/4k/bhptqqm131v6f034phck6fc80000gn/T/tmp56dt_nfn']
+[2024-12-04T15:42:25.327+0100] {standard_task_runner.py:105} INFO - Job 15: Subtask load_datasets
+[2024-12-04T15:42:25.351+0100] {task_command.py:467} INFO - Running <TaskInstance: data_warehouse_etl.load_datasets manual__2024-12-04T14:42:16.988033+00:00 [running]> on host sijibomis-MacBook-Pro.local
+[2024-12-04T15:42:25.372+0100] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='data_engineering' AIRFLOW_CTX_DAG_ID='data_warehouse_etl' AIRFLOW_CTX_TASK_ID='load_datasets' AIRFLOW_CTX_EXECUTION_DATE='2024-12-04T14:42:16.988033+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-12-04T14:42:16.988033+00:00'
+[2024-12-04T15:42:25.372+0100] {taskinstance.py:731} INFO - ::endgroup::
+[2024-12-04T15:42:25.389+0100] {python.py:240} INFO - Done. Returned value was: (       Client                       Project  ...                                        Note Billable
+0    Client 1           Website Development  ...                     Refined design elements      Yes
+1    Client 1           Website Development  ...             Drafted initial design concepts      Yes
+2    Client 1           Website Development  ...             Drafted initial design concepts      Yes
+3    Client 1           Website Development  ...  Made revisions to design based on feedback      Yes
+4    Client 1           Website Development  ...  Made revisions to design based on feedback      Yes
+..        ...                           ...  ...                                         ...      ...
+451  Client 2  Book Localization to Ukraine  ...              Checked in on project progress      Yes
+452  Client 2  Book Localization to Ukraine  ...                    Communicated with client      Yes
+453  Client 2  Book Localization to Ukraine  ...              Checked in on project progress      Yes
+454  Client 2  Book Localization to Ukraine  ...                    Facilitated team meeting      Yes
+455  Client 2  Book Localization to Ukraine  ...                    Facilitated team meeting      Yes
+
+[456 rows x 8 columns],       Client                       Project  ...    End Date Estimated Hours
+0   Client 1           Website Development  ...  2023-07-24             112
+1   Client 1           Website Development  ...  2023-07-24              24
+2   Client 1           Website Development  ...  2023-08-28             189
+3   Client 1           Website Development  ...  2023-09-04              77
+4   Client 1           Website Development  ...  2023-09-04              92
+5   Client 1               Brand Guideline  ...  2023-07-24             112
+6   Client 1               Brand Guideline  ...  2023-07-24              32
+7   Client 1               Brand Guideline  ...  2023-07-24              24
+8   Client 2  Book Localization to Ukraine  ...  2023-08-14             182
+9   Client 2  Book Localization to Ukraine  ...  2023-08-28             182
+10  Client 2  Book Localization to Ukraine  ...  2023-08-28              52
+11  Client 2  Book Localization to Ukraine  ...  2023-08-28               0
+12  Client 2  Book Localization to Ukraine  ...  2023-08-28              36
+
+[13 rows x 8 columns])
+[2024-12-04T15:42:25.405+0100] {taskinstance.py:3311} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/Users/sijibomijoshua/airflow/airflow_env/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 789, in _execute_task
+    task_instance.xcom_push(key=XCOM_RETURN_KEY, value=xcom_value, session=session_or_null)
+  File "/Users/sijibomijoshua/airflow/airflow_env/lib/python3.11/site-packages/airflow/utils/session.py", line 94, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sijibomijoshua/airflow/airflow_env/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3639, in xcom_push
+    XCom.set(
+  File "/Users/sijibomijoshua/airflow/airflow_env/lib/python3.11/site-packages/airflow/api_internal/internal_api_call.py", line 166, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sijibomijoshua/airflow/airflow_env/lib/python3.11/site-packages/airflow/utils/session.py", line 94, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sijibomijoshua/airflow/airflow_env/lib/python3.11/site-packages/airflow/models/xcom.py", line 249, in set
+    value = cls.serialize_value(
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sijibomijoshua/airflow/airflow_env/lib/python3.11/site-packages/airflow/models/xcom.py", line 688, in serialize_value
+    return json.dumps(value, cls=XComEncoder).encode("UTF-8")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sijibomijoshua/.pyenv/versions/3.11.6/lib/python3.11/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/Users/sijibomijoshua/airflow/airflow_env/lib/python3.11/site-packages/airflow/utils/json.py", line 103, in encode
+    o = self.default(o)
+        ^^^^^^^^^^^^^^^
+  File "/Users/sijibomijoshua/airflow/airflow_env/lib/python3.11/site-packages/airflow/utils/json.py", line 92, in default
+    return serialize(o)
+           ^^^^^^^^^^^^
+  File "/Users/sijibomijoshua/airflow/airflow_env/lib/python3.11/site-packages/airflow/serialization/serde.py", line 151, in serialize
+    return encode(classname or serialized_classname, version, serialize(data, depth + 1))
+                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sijibomijoshua/airflow/airflow_env/lib/python3.11/site-packages/airflow/serialization/serde.py", line 128, in serialize
+    return [serialize(d, depth + 1) for d in o]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sijibomijoshua/airflow/airflow_env/lib/python3.11/site-packages/airflow/serialization/serde.py", line 128, in <listcomp>
+    return [serialize(d, depth + 1) for d in o]
+            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sijibomijoshua/airflow/airflow_env/lib/python3.11/site-packages/airflow/serialization/serde.py", line 149, in serialize
+    data, serialized_classname, version, is_serialized = _serializers[qn].serialize(o)
+                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sijibomijoshua/airflow/airflow_env/lib/python3.11/site-packages/airflow/serialization/serializers/pandas.py", line 40, in serialize
+    import pyarrow as pa
+ModuleNotFoundError: No module named 'pyarrow'
+[2024-12-04T15:42:25.409+0100] {taskinstance.py:1225} INFO - Marking task as UP_FOR_RETRY. dag_id=data_warehouse_etl, task_id=load_datasets, run_id=manual__2024-12-04T14:42:16.988033+00:00, execution_date=20241204T144216, start_date=20241204T144225, end_date=20241204T144225
+[2024-12-04T15:42:25.413+0100] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-12-04T15:42:25.414+0100] {standard_task_runner.py:124} ERROR - Failed to execute job 15 for task load_datasets (No module named 'pyarrow'; 39481)
+Traceback (most recent call last):
+  File "/Users/sijibomijoshua/airflow/airflow_env/lib/python3.11/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sijibomijoshua/airflow/airflow_env/lib/python3.11/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sijibomijoshua/airflow/airflow_env/lib/python3.11/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sijibomijoshua/airflow/airflow_env/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sijibomijoshua/airflow/airflow_env/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sijibomijoshua/airflow/airflow_env/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/Users/sijibomijoshua/airflow/airflow_env/lib/python3.11/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sijibomijoshua/airflow/airflow_env/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3005, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/Users/sijibomijoshua/airflow/airflow_env/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/Users/sijibomijoshua/airflow/airflow_env/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3159, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sijibomijoshua/airflow/airflow_env/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3183, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sijibomijoshua/airflow/airflow_env/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 789, in _execute_task
+    task_instance.xcom_push(key=XCOM_RETURN_KEY, value=xcom_value, session=session_or_null)
+  File "/Users/sijibomijoshua/airflow/airflow_env/lib/python3.11/site-packages/airflow/utils/session.py", line 94, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sijibomijoshua/airflow/airflow_env/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3639, in xcom_push
+    XCom.set(
+  File "/Users/sijibomijoshua/airflow/airflow_env/lib/python3.11/site-packages/airflow/api_internal/internal_api_call.py", line 166, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sijibomijoshua/airflow/airflow_env/lib/python3.11/site-packages/airflow/utils/session.py", line 94, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sijibomijoshua/airflow/airflow_env/lib/python3.11/site-packages/airflow/models/xcom.py", line 249, in set
+    value = cls.serialize_value(
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sijibomijoshua/airflow/airflow_env/lib/python3.11/site-packages/airflow/models/xcom.py", line 688, in serialize_value
+    return json.dumps(value, cls=XComEncoder).encode("UTF-8")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sijibomijoshua/.pyenv/versions/3.11.6/lib/python3.11/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/Users/sijibomijoshua/airflow/airflow_env/lib/python3.11/site-packages/airflow/utils/json.py", line 103, in encode
+    o = self.default(o)
+        ^^^^^^^^^^^^^^^
+  File "/Users/sijibomijoshua/airflow/airflow_env/lib/python3.11/site-packages/airflow/utils/json.py", line 92, in default
+    return serialize(o)
+           ^^^^^^^^^^^^
+  File "/Users/sijibomijoshua/airflow/airflow_env/lib/python3.11/site-packages/airflow/serialization/serde.py", line 151, in serialize
+    return encode(classname or serialized_classname, version, serialize(data, depth + 1))
+                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sijibomijoshua/airflow/airflow_env/lib/python3.11/site-packages/airflow/serialization/serde.py", line 128, in serialize
+    return [serialize(d, depth + 1) for d in o]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sijibomijoshua/airflow/airflow_env/lib/python3.11/site-packages/airflow/serialization/serde.py", line 128, in <listcomp>
+    return [serialize(d, depth + 1) for d in o]
+            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sijibomijoshua/airflow/airflow_env/lib/python3.11/site-packages/airflow/serialization/serde.py", line 149, in serialize
+    data, serialized_classname, version, is_serialized = _serializers[qn].serialize(o)
+                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sijibomijoshua/airflow/airflow_env/lib/python3.11/site-packages/airflow/serialization/serializers/pandas.py", line 40, in serialize
+    import pyarrow as pa
+ModuleNotFoundError: No module named 'pyarrow'
+[2024-12-04T15:42:25.433+0100] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2024-12-04T15:42:25.439+0100] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-12-04T15:42:25.439+0100] {local_task_job_runner.py:245} INFO - ::endgroup::
