@@ -7,19 +7,16 @@ load_dotenv()
 class Config:
     # Database Configuration
     DB_CONNECTION_STRING = os.getenv(
-        'DB_CONNECTION_STRING', 
-        'sqlite:///datawarehouse_standard.db'
+        'DB_CONNECTION_STRING'
     )
     
     # Data Source Paths
     CLICKUP_PATH = os.getenv(
-        'CLICKUP_PATH', 
-        '/Users/sijibomijoshua/Downloads/Airflow Local/ClickUp - clickup.csv.csv'
+        'CLICKUP_PATH'
     )
     
     FLOAT_PATH = os.getenv(
-        'FLOAT_PATH', 
-        '/Users/sijibomijoshua/Downloads/Airflow Local/Float - allocations.csv.csv'
+        'FLOAT_PATH'
     )
     
     # Logging Configuration

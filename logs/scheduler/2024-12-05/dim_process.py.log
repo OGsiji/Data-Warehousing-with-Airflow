@@ -2775,3 +2775,171 @@ SyntaxError: invalid syntax
 [2024-12-05T15:38:40.477+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:38:40.477+0100] {dag.py:3239} INFO - Sync 1 DAGs
 [2024-12-05T15:38:40.484+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:38:40.484+0100] {dag.py:4180} INFO - Setting next_dagrun for data_warehouse_etl to 2024-12-05 00:00:00+00:00, run_after=2024-12-06 00:00:00+00:00
 [2024-12-05T15:38:40.490+0100] {processor.py:208} INFO - Processing /Users/sijibomijoshua/airflow/dags/dim_process.py took 0.419 seconds
+[2024-12-05T15:39:12.221+0100] {processor.py:186} INFO - Started process (PID=42605) to work on /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:39:12.223+0100] {processor.py:914} INFO - Processing file /Users/sijibomijoshua/airflow/dags/dim_process.py for tasks to queue
+[2024-12-05T15:39:12.224+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:39:12.224+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:39:12.545+0100] {processor.py:925} INFO - DAG(s) 'data_warehouse_etl' retrieved from /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:39:12.579+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:39:12.579+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-05T15:39:12.585+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:39:12.585+0100] {dag.py:4180} INFO - Setting next_dagrun for data_warehouse_etl to 2024-12-05 00:00:00+00:00, run_after=2024-12-06 00:00:00+00:00
+[2024-12-05T15:39:12.591+0100] {processor.py:208} INFO - Processing /Users/sijibomijoshua/airflow/dags/dim_process.py took 0.372 seconds
+[2024-12-05T15:39:43.868+0100] {processor.py:186} INFO - Started process (PID=43444) to work on /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:39:43.869+0100] {processor.py:914} INFO - Processing file /Users/sijibomijoshua/airflow/dags/dim_process.py for tasks to queue
+[2024-12-05T15:39:43.869+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:39:43.869+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:39:44.202+0100] {processor.py:925} INFO - DAG(s) 'data_warehouse_etl' retrieved from /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:39:44.237+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:39:44.237+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-05T15:39:44.248+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:39:44.247+0100] {dag.py:4180} INFO - Setting next_dagrun for data_warehouse_etl to 2024-12-05 00:00:00+00:00, run_after=2024-12-06 00:00:00+00:00
+[2024-12-05T15:39:44.256+0100] {processor.py:208} INFO - Processing /Users/sijibomijoshua/airflow/dags/dim_process.py took 0.391 seconds
+[2024-12-05T15:40:15.883+0100] {processor.py:186} INFO - Started process (PID=44263) to work on /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:40:15.883+0100] {processor.py:914} INFO - Processing file /Users/sijibomijoshua/airflow/dags/dim_process.py for tasks to queue
+[2024-12-05T15:40:15.884+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:40:15.884+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:40:16.194+0100] {processor.py:925} INFO - DAG(s) 'data_warehouse_etl' retrieved from /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:40:16.229+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:40:16.228+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-05T15:40:16.235+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:40:16.235+0100] {dag.py:4180} INFO - Setting next_dagrun for data_warehouse_etl to 2024-12-05 00:00:00+00:00, run_after=2024-12-06 00:00:00+00:00
+[2024-12-05T15:40:16.241+0100] {processor.py:208} INFO - Processing /Users/sijibomijoshua/airflow/dags/dim_process.py took 0.359 seconds
+[2024-12-05T15:40:47.452+0100] {processor.py:186} INFO - Started process (PID=45069) to work on /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:40:47.453+0100] {processor.py:914} INFO - Processing file /Users/sijibomijoshua/airflow/dags/dim_process.py for tasks to queue
+[2024-12-05T15:40:47.454+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:40:47.454+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:40:47.741+0100] {processor.py:925} INFO - DAG(s) 'data_warehouse_etl' retrieved from /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:40:47.776+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:40:47.776+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-05T15:40:47.783+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:40:47.783+0100] {dag.py:4180} INFO - Setting next_dagrun for data_warehouse_etl to 2024-12-05 00:00:00+00:00, run_after=2024-12-06 00:00:00+00:00
+[2024-12-05T15:40:47.789+0100] {processor.py:208} INFO - Processing /Users/sijibomijoshua/airflow/dags/dim_process.py took 0.338 seconds
+[2024-12-05T15:41:19.845+0100] {processor.py:186} INFO - Started process (PID=45916) to work on /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:41:19.846+0100] {processor.py:914} INFO - Processing file /Users/sijibomijoshua/airflow/dags/dim_process.py for tasks to queue
+[2024-12-05T15:41:19.847+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:41:19.847+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:41:20.434+0100] {processor.py:925} INFO - DAG(s) 'data_warehouse_etl' retrieved from /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:41:20.474+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:41:20.474+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-05T15:41:20.481+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:41:20.481+0100] {dag.py:4180} INFO - Setting next_dagrun for data_warehouse_etl to 2024-12-05 00:00:00+00:00, run_after=2024-12-06 00:00:00+00:00
+[2024-12-05T15:41:20.489+0100] {processor.py:208} INFO - Processing /Users/sijibomijoshua/airflow/dags/dim_process.py took 0.647 seconds
+[2024-12-05T15:41:51.945+0100] {processor.py:186} INFO - Started process (PID=46788) to work on /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:41:51.948+0100] {processor.py:914} INFO - Processing file /Users/sijibomijoshua/airflow/dags/dim_process.py for tasks to queue
+[2024-12-05T15:41:51.948+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:41:51.948+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:41:52.528+0100] {processor.py:925} INFO - DAG(s) 'data_warehouse_etl' retrieved from /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:41:52.564+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:41:52.564+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-05T15:41:52.571+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:41:52.571+0100] {dag.py:4180} INFO - Setting next_dagrun for data_warehouse_etl to 2024-12-05 00:00:00+00:00, run_after=2024-12-06 00:00:00+00:00
+[2024-12-05T15:41:52.577+0100] {processor.py:208} INFO - Processing /Users/sijibomijoshua/airflow/dags/dim_process.py took 0.633 seconds
+[2024-12-05T15:42:24.317+0100] {processor.py:186} INFO - Started process (PID=47594) to work on /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:42:24.318+0100] {processor.py:914} INFO - Processing file /Users/sijibomijoshua/airflow/dags/dim_process.py for tasks to queue
+[2024-12-05T15:42:24.319+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:42:24.319+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:42:24.659+0100] {processor.py:925} INFO - DAG(s) 'data_warehouse_etl' retrieved from /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:42:24.696+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:42:24.696+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-05T15:42:24.703+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:42:24.703+0100] {dag.py:4180} INFO - Setting next_dagrun for data_warehouse_etl to 2024-12-05 00:00:00+00:00, run_after=2024-12-06 00:00:00+00:00
+[2024-12-05T15:42:24.709+0100] {processor.py:208} INFO - Processing /Users/sijibomijoshua/airflow/dags/dim_process.py took 0.394 seconds
+[2024-12-05T15:42:55.968+0100] {processor.py:186} INFO - Started process (PID=48365) to work on /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:42:55.969+0100] {processor.py:914} INFO - Processing file /Users/sijibomijoshua/airflow/dags/dim_process.py for tasks to queue
+[2024-12-05T15:42:55.969+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:42:55.969+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:42:56.442+0100] {processor.py:925} INFO - DAG(s) 'data_warehouse_etl' retrieved from /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:42:56.482+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:42:56.481+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-05T15:42:56.490+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:42:56.490+0100] {dag.py:4180} INFO - Setting next_dagrun for data_warehouse_etl to 2024-12-05 00:00:00+00:00, run_after=2024-12-06 00:00:00+00:00
+[2024-12-05T15:42:56.498+0100] {processor.py:208} INFO - Processing /Users/sijibomijoshua/airflow/dags/dim_process.py took 0.531 seconds
+[2024-12-05T15:43:28.033+0100] {processor.py:186} INFO - Started process (PID=49156) to work on /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:43:28.033+0100] {processor.py:914} INFO - Processing file /Users/sijibomijoshua/airflow/dags/dim_process.py for tasks to queue
+[2024-12-05T15:43:28.034+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:43:28.034+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:43:28.354+0100] {processor.py:925} INFO - DAG(s) 'data_warehouse_etl' retrieved from /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:43:28.401+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:43:28.401+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-05T15:43:28.410+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:43:28.410+0100] {dag.py:4180} INFO - Setting next_dagrun for data_warehouse_etl to 2024-12-05 00:00:00+00:00, run_after=2024-12-06 00:00:00+00:00
+[2024-12-05T15:43:28.418+0100] {processor.py:208} INFO - Processing /Users/sijibomijoshua/airflow/dags/dim_process.py took 0.387 seconds
+[2024-12-05T15:44:00.596+0100] {processor.py:186} INFO - Started process (PID=49926) to work on /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:44:00.597+0100] {processor.py:914} INFO - Processing file /Users/sijibomijoshua/airflow/dags/dim_process.py for tasks to queue
+[2024-12-05T15:44:00.597+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:44:00.597+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:44:00.983+0100] {processor.py:925} INFO - DAG(s) 'data_warehouse_etl' retrieved from /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:44:01.036+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:44:01.036+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-05T15:44:01.044+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:44:01.044+0100] {dag.py:4180} INFO - Setting next_dagrun for data_warehouse_etl to 2024-12-05 00:00:00+00:00, run_after=2024-12-06 00:00:00+00:00
+[2024-12-05T15:44:01.050+0100] {processor.py:208} INFO - Processing /Users/sijibomijoshua/airflow/dags/dim_process.py took 0.456 seconds
+[2024-12-05T15:44:32.280+0100] {processor.py:186} INFO - Started process (PID=50699) to work on /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:44:32.280+0100] {processor.py:914} INFO - Processing file /Users/sijibomijoshua/airflow/dags/dim_process.py for tasks to queue
+[2024-12-05T15:44:32.281+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:44:32.281+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:44:32.589+0100] {processor.py:925} INFO - DAG(s) 'data_warehouse_etl' retrieved from /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:44:32.625+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:44:32.624+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-05T15:44:32.631+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:44:32.631+0100] {dag.py:4180} INFO - Setting next_dagrun for data_warehouse_etl to 2024-12-05 00:00:00+00:00, run_after=2024-12-06 00:00:00+00:00
+[2024-12-05T15:44:32.637+0100] {processor.py:208} INFO - Processing /Users/sijibomijoshua/airflow/dags/dim_process.py took 0.359 seconds
+[2024-12-05T15:45:03.965+0100] {processor.py:186} INFO - Started process (PID=51479) to work on /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:45:03.965+0100] {processor.py:914} INFO - Processing file /Users/sijibomijoshua/airflow/dags/dim_process.py for tasks to queue
+[2024-12-05T15:45:03.966+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:45:03.966+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:45:04.265+0100] {processor.py:925} INFO - DAG(s) 'data_warehouse_etl' retrieved from /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:45:04.301+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:45:04.301+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-05T15:45:04.308+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:45:04.308+0100] {dag.py:4180} INFO - Setting next_dagrun for data_warehouse_etl to 2024-12-05 00:00:00+00:00, run_after=2024-12-06 00:00:00+00:00
+[2024-12-05T15:45:04.314+0100] {processor.py:208} INFO - Processing /Users/sijibomijoshua/airflow/dags/dim_process.py took 0.351 seconds
+[2024-12-05T15:45:35.325+0100] {processor.py:186} INFO - Started process (PID=52237) to work on /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:45:35.325+0100] {processor.py:914} INFO - Processing file /Users/sijibomijoshua/airflow/dags/dim_process.py for tasks to queue
+[2024-12-05T15:45:35.326+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:45:35.326+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:45:35.685+0100] {processor.py:925} INFO - DAG(s) 'data_warehouse_etl' retrieved from /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:45:35.722+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:45:35.721+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-05T15:45:35.729+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:45:35.729+0100] {dag.py:4180} INFO - Setting next_dagrun for data_warehouse_etl to 2024-12-05 00:00:00+00:00, run_after=2024-12-06 00:00:00+00:00
+[2024-12-05T15:45:35.736+0100] {processor.py:208} INFO - Processing /Users/sijibomijoshua/airflow/dags/dim_process.py took 0.413 seconds
+[2024-12-05T15:46:08.214+0100] {processor.py:186} INFO - Started process (PID=53051) to work on /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:46:08.215+0100] {processor.py:914} INFO - Processing file /Users/sijibomijoshua/airflow/dags/dim_process.py for tasks to queue
+[2024-12-05T15:46:08.215+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:46:08.215+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:46:08.508+0100] {processor.py:925} INFO - DAG(s) 'data_warehouse_etl' retrieved from /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:46:08.543+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:46:08.543+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-05T15:46:08.549+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:46:08.549+0100] {dag.py:4180} INFO - Setting next_dagrun for data_warehouse_etl to 2024-12-05 00:00:00+00:00, run_after=2024-12-06 00:00:00+00:00
+[2024-12-05T15:46:08.555+0100] {processor.py:208} INFO - Processing /Users/sijibomijoshua/airflow/dags/dim_process.py took 0.345 seconds
+[2024-12-05T15:46:39.465+0100] {processor.py:186} INFO - Started process (PID=53759) to work on /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:46:39.466+0100] {processor.py:914} INFO - Processing file /Users/sijibomijoshua/airflow/dags/dim_process.py for tasks to queue
+[2024-12-05T15:46:39.466+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:46:39.466+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:46:39.783+0100] {processor.py:925} INFO - DAG(s) 'data_warehouse_etl' retrieved from /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:46:39.817+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:46:39.817+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-05T15:46:39.823+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:46:39.823+0100] {dag.py:4180} INFO - Setting next_dagrun for data_warehouse_etl to 2024-12-05 00:00:00+00:00, run_after=2024-12-06 00:00:00+00:00
+[2024-12-05T15:46:39.830+0100] {processor.py:208} INFO - Processing /Users/sijibomijoshua/airflow/dags/dim_process.py took 0.366 seconds
+[2024-12-05T15:47:12.509+0100] {processor.py:186} INFO - Started process (PID=54553) to work on /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:47:12.509+0100] {processor.py:914} INFO - Processing file /Users/sijibomijoshua/airflow/dags/dim_process.py for tasks to queue
+[2024-12-05T15:47:12.510+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:47:12.510+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:47:12.851+0100] {processor.py:925} INFO - DAG(s) 'data_warehouse_etl' retrieved from /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:47:12.888+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:47:12.887+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-05T15:47:12.898+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:47:12.897+0100] {dag.py:4180} INFO - Setting next_dagrun for data_warehouse_etl to 2024-12-05 00:00:00+00:00, run_after=2024-12-06 00:00:00+00:00
+[2024-12-05T15:47:12.910+0100] {processor.py:208} INFO - Processing /Users/sijibomijoshua/airflow/dags/dim_process.py took 0.404 seconds
+[2024-12-05T15:47:44.490+0100] {processor.py:186} INFO - Started process (PID=55304) to work on /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:47:44.491+0100] {processor.py:914} INFO - Processing file /Users/sijibomijoshua/airflow/dags/dim_process.py for tasks to queue
+[2024-12-05T15:47:44.491+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:47:44.491+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:47:44.814+0100] {processor.py:925} INFO - DAG(s) 'data_warehouse_etl' retrieved from /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:47:44.852+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:47:44.852+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-05T15:47:44.859+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:47:44.859+0100] {dag.py:4180} INFO - Setting next_dagrun for data_warehouse_etl to 2024-12-05 00:00:00+00:00, run_after=2024-12-06 00:00:00+00:00
+[2024-12-05T15:47:44.866+0100] {processor.py:208} INFO - Processing /Users/sijibomijoshua/airflow/dags/dim_process.py took 0.378 seconds
+[2024-12-05T15:48:16.582+0100] {processor.py:186} INFO - Started process (PID=56103) to work on /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:48:16.583+0100] {processor.py:914} INFO - Processing file /Users/sijibomijoshua/airflow/dags/dim_process.py for tasks to queue
+[2024-12-05T15:48:16.583+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:48:16.583+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:48:16.876+0100] {processor.py:925} INFO - DAG(s) 'data_warehouse_etl' retrieved from /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:48:16.912+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:48:16.912+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-05T15:48:16.919+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:48:16.919+0100] {dag.py:4180} INFO - Setting next_dagrun for data_warehouse_etl to 2024-12-05 00:00:00+00:00, run_after=2024-12-06 00:00:00+00:00
+[2024-12-05T15:48:16.925+0100] {processor.py:208} INFO - Processing /Users/sijibomijoshua/airflow/dags/dim_process.py took 0.344 seconds
+[2024-12-05T15:48:48.874+0100] {processor.py:186} INFO - Started process (PID=56861) to work on /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:48:48.875+0100] {processor.py:914} INFO - Processing file /Users/sijibomijoshua/airflow/dags/dim_process.py for tasks to queue
+[2024-12-05T15:48:48.876+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:48:48.875+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:48:49.215+0100] {processor.py:925} INFO - DAG(s) 'data_warehouse_etl' retrieved from /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:48:49.252+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:48:49.251+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-05T15:48:49.260+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:48:49.259+0100] {dag.py:4180} INFO - Setting next_dagrun for data_warehouse_etl to 2024-12-05 00:00:00+00:00, run_after=2024-12-06 00:00:00+00:00
+[2024-12-05T15:48:49.270+0100] {processor.py:208} INFO - Processing /Users/sijibomijoshua/airflow/dags/dim_process.py took 0.397 seconds
+[2024-12-05T15:49:21.062+0100] {processor.py:186} INFO - Started process (PID=57640) to work on /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:49:21.063+0100] {processor.py:914} INFO - Processing file /Users/sijibomijoshua/airflow/dags/dim_process.py for tasks to queue
+[2024-12-05T15:49:21.063+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:49:21.063+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:49:21.555+0100] {processor.py:925} INFO - DAG(s) 'data_warehouse_etl' retrieved from /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:49:21.602+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:49:21.602+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-05T15:49:21.614+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:49:21.614+0100] {dag.py:4180} INFO - Setting next_dagrun for data_warehouse_etl to 2024-12-05 00:00:00+00:00, run_after=2024-12-06 00:00:00+00:00
+[2024-12-05T15:49:21.623+0100] {processor.py:208} INFO - Processing /Users/sijibomijoshua/airflow/dags/dim_process.py took 0.564 seconds
+[2024-12-05T15:49:53.066+0100] {processor.py:186} INFO - Started process (PID=58432) to work on /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:49:53.067+0100] {processor.py:914} INFO - Processing file /Users/sijibomijoshua/airflow/dags/dim_process.py for tasks to queue
+[2024-12-05T15:49:53.067+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:49:53.067+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:49:53.371+0100] {processor.py:925} INFO - DAG(s) 'data_warehouse_etl' retrieved from /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:49:53.407+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:49:53.407+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-05T15:49:53.414+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:49:53.414+0100] {dag.py:4180} INFO - Setting next_dagrun for data_warehouse_etl to 2024-12-05 00:00:00+00:00, run_after=2024-12-06 00:00:00+00:00
+[2024-12-05T15:49:53.420+0100] {processor.py:208} INFO - Processing /Users/sijibomijoshua/airflow/dags/dim_process.py took 0.355 seconds
+[2024-12-05T15:50:26.347+0100] {processor.py:186} INFO - Started process (PID=59244) to work on /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:50:26.348+0100] {processor.py:914} INFO - Processing file /Users/sijibomijoshua/airflow/dags/dim_process.py for tasks to queue
+[2024-12-05T15:50:26.349+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:50:26.349+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:50:26.699+0100] {processor.py:925} INFO - DAG(s) 'data_warehouse_etl' retrieved from /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:50:26.738+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:50:26.738+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-05T15:50:26.745+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:50:26.745+0100] {dag.py:4180} INFO - Setting next_dagrun for data_warehouse_etl to 2024-12-05 00:00:00+00:00, run_after=2024-12-06 00:00:00+00:00
+[2024-12-05T15:50:26.752+0100] {processor.py:208} INFO - Processing /Users/sijibomijoshua/airflow/dags/dim_process.py took 0.407 seconds
+[2024-12-05T15:50:58.796+0100] {processor.py:186} INFO - Started process (PID=60098) to work on /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:50:58.797+0100] {processor.py:914} INFO - Processing file /Users/sijibomijoshua/airflow/dags/dim_process.py for tasks to queue
+[2024-12-05T15:50:58.797+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:50:58.797+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:50:59.108+0100] {processor.py:925} INFO - DAG(s) 'data_warehouse_etl' retrieved from /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:50:59.154+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:50:59.154+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-05T15:50:59.163+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:50:59.163+0100] {dag.py:4180} INFO - Setting next_dagrun for data_warehouse_etl to 2024-12-05 00:00:00+00:00, run_after=2024-12-06 00:00:00+00:00
+[2024-12-05T15:50:59.170+0100] {processor.py:208} INFO - Processing /Users/sijibomijoshua/airflow/dags/dim_process.py took 0.375 seconds
+[2024-12-05T15:51:31.210+0100] {processor.py:186} INFO - Started process (PID=60875) to work on /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:51:31.211+0100] {processor.py:914} INFO - Processing file /Users/sijibomijoshua/airflow/dags/dim_process.py for tasks to queue
+[2024-12-05T15:51:31.211+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:51:31.211+0100] {dagbag.py:588} INFO - Filling up the DagBag from /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:51:31.642+0100] {processor.py:925} INFO - DAG(s) 'data_warehouse_etl' retrieved from /Users/sijibomijoshua/airflow/dags/dim_process.py
+[2024-12-05T15:51:31.745+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:51:31.744+0100] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-05T15:51:31.751+0100] {logging_mixin.py:190} INFO - [2024-12-05T15:51:31.751+0100] {dag.py:4180} INFO - Setting next_dagrun for data_warehouse_etl to 2024-12-05 00:00:00+00:00, run_after=2024-12-06 00:00:00+00:00
+[2024-12-05T15:51:31.758+0100] {processor.py:208} INFO - Processing /Users/sijibomijoshua/airflow/dags/dim_process.py took 0.549 seconds
