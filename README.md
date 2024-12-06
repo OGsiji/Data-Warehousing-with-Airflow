@@ -233,7 +233,7 @@ Logging is configured to track detailed information about each step in the ETL p
 
 ## Why This Project is Exciting
 
-This pipeline is **scalable**, **robust**, and built with **best practices** in mind. Whether you're new to Airflow or a seasoned pro, you'll find this project useful for learning and applying the core principles of ETL processes in real-world environments.
+This pipeline is **scalable**, **robust**, and built with **best practices** in mind. 
 
 Additionally, with the **standard DAG**'s optimized arrangement and **industry-standard specifications**, you'll be able to confidently run and manage data pipelines at scale—perfect for handling growing datasets and ensuring data accuracy.
 
