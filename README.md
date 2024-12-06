@@ -1,22 +1,10 @@
-Here's the updated project structure and README with the clarification that there are **two DAGs** inside: `data_warehouse_etl_dag.py` (standard) and `dim_process.py` (basic).
+## Assignment 1 Solution
 
----
 
 # Data Warehouse ETL Pipeline
 
 ## Project Overview
 Welcome to the **Data Warehouse ETL Pipeline**! This project implements a robust and scalable ETL (Extract, Transform, Load) pipeline to seamlessly consolidate time-tracking and project data from **ClickUp** and **Float**. We focus on data quality and best practices to ensure the pipeline is efficient, easy to maintain, and deploy.
-
-## DAGs Overview
-This repository contains **two DAGs** that perform similar ETL operations, but with different configurations and specifications:
-
-1. **Basic DAG (`dim_process.py`)**: This is the basic version of the ETL pipeline DAG. It demonstrates a simple, functional ETL process for those who are new to Airflow or need a lightweight solution. It's easy to understand and extend for custom use cases.
-
-2. **Standard DAG (`data_warehouse_etl_dag.py`)**: This is a more **advanced, robust DAG** designed with **best practices** in mind. It includes a structured arrangement, optimized code, and proper software specifications for scalability and maintainability. This DAG follows the industry-standard workflow patterns, ensuring that the ETL process is efficient, reusable, and production-ready.
-
-Both DAGs perform the same operations, but the standard one incorporates a more **organized structure**, **error handling**, **logging**, and **monitoring capabilities** to ensure smooth execution at scale. Whether you're a beginner or a pro, both DAGs demonstrate the power and flexibility of Airflow in building ETL pipelines.
-
-
 
 ## DAGs Overview
 
@@ -29,9 +17,6 @@ This repository contains **two DAGs** that perform similar ETL operations, but w
 2. **Standard DAG (`data_warehouse_etl_dag.py`)**: This is a more **advanced, robust DAG** designed with **best practices** in mind. It includes a structured arrangement, optimized code, and proper software specifications for scalability and maintainability. This DAG follows the industry-standard workflow patterns, ensuring that the ETL process is efficient, reusable, and production-ready.
 
    ![Standard DAG](images/airflow1.png)  <!-- Replace with actual image path -->
-
-Both DAGs perform the same operations, but the standard one incorporates a more **organized structure**, **error handling**, **logging**, and **monitoring capabilities** to ensure smooth execution at scale. Whether you're a beginner or a pro, both DAGs demonstrate the power and flexibility of Airflow in building ETL pipelines.
-
 
 ## Data Warehouse Design
 
@@ -252,4 +237,3 @@ This pipeline is **scalable**, **robust**, and built with **best practices** in 
 
 Additionally, with the **standard DAG**'s optimized arrangement and **industry-standard specifications**, you'll be able to confidently run and manage data pipelines at scale—perfect for handling growing datasets and ensuring data accuracy.
 
-**Start building, learning, and contributing to scalable data pipelines with this project—you're one step closer to mastering the art of ETL in Apache Airflow!**
